@@ -2,6 +2,8 @@ package com.algoexp.arrays;
 
 import org.junit.Test;
 
+import junit.framework.Assert;
+
 import java.util.*;
 /**
  * Sprial Traversal :
@@ -28,7 +30,7 @@ public class ArrayP9 {
                 };
         var expected = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16);
         var actual = ArrayP9.spiralTraverse(input);
-       // Utils.assertTrue(expected.equals(actual));
+        Assert.assertEquals(expected,Arrays.asList(actual));
     }
     public static List<Integer> spiralTraverse(int[][] array) {
         ArrayList<Integer> input = new ArrayList<Integer>();
@@ -37,6 +39,6 @@ public class ArrayP9 {
         for(int count = 0;  count < row*col; count++){
 
         }
-
+        return input;
     }
 }
