@@ -14,7 +14,7 @@ import java.util.HashSet;
  * example :
  *
  */
-public class ArrayP1 {
+public class P1TwoNumberSum {
     public static int[] twoNumberSum(int[] array, int targetSum) {
         HashSet<Integer> set= new HashSet<>();
         ArrayList<Integer> result = new ArrayList<>(0);

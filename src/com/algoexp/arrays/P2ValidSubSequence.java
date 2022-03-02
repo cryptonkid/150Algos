@@ -15,7 +15,7 @@ import java.util.List;
  * Note that a single number in an array and the array itself are both valid sequences of the the array.
  *
  */
-public class ArrayP2 {
+public class P2ValidSubSequence {
     //not working fails for duplicate values cases etc.
     public static boolean isValidSubsequence1(List<Integer> array, List<Integer> sequence) {
         HashMap<Integer,Integer> map = new HashMap<>();
@@ -53,6 +53,12 @@ public class ArrayP2 {
         }
         return j == sequence.size();
     }
+
+    /**
+     * Without Extra Memory
+     *
+     */
+
     public static boolean isValidSubsequence(List<Integer> array, List<Integer> sequence) {
         int i = 0, j = 0;
         while (i < array.size() && j < sequence.size()) {
